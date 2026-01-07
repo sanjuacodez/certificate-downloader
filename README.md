@@ -5,7 +5,14 @@ A high-performance WordPress plugin for managing and issuing digital certificate
 ## 📚 Documentation
 
 - [Database Schema](DATABASE_SCHEMA.md) - Complete database structure and field descriptions
+- [API Documentation](API.md) - REST API, hooks, filters, and developer reference
 - [Project Status](PROJECT_STATUS.md) - Feature completion status and roadmap
+
+## 🔗 Repository
+
+**GitHub**: https://github.com/sanjuacodez/certificate-downloader
+
+This repository contains the complete plugin folder ready to be cloned into your WordPress `wp-content/plugins/` directory.
 
 ## 🌟 Features
 
@@ -52,19 +59,19 @@ A high-performance WordPress plugin for managing and issuing digital certificate
 
 ### From GitHub
 
-1. Download the plugin ZIP or clone the repository:
+1. Navigate to your WordPress plugins directory:
    ```bash
-   git clone https://github.com/yourusername/certificate-downloader.git
+   cd /path/to/your/wordpress/wp-content/plugins/
    ```
 
-2. Upload to your WordPress plugins directory:
-   ```
-   wp-content/plugins/certificate-downloader/
+2. Clone the repository directly into the plugins directory:
+   ```bash
+   git clone https://github.com/sanjuacodez/certificate-downloader.git
    ```
 
-3. Install dependencies (if composer.json exists):
+3. Install Composer dependencies:
    ```bash
-   cd wp-content/plugins/certificate-downloader
+   cd certificate-downloader
    composer install --no-dev
    ```
 
@@ -77,10 +84,11 @@ A high-performance WordPress plugin for managing and issuing digital certificate
 
 ### Manual Installation
 
-1. Download the plugin files
-2. Upload to `/wp-content/plugins/certificate-downloader/`
-3. Ensure `vendor/` directory exists with DomPDF dependencies
-4. Activate through WordPress admin
+1. Download or clone from: https://github.com/sanjuacodez/certificate-downloader
+2. Upload the entire `certificate-downloader` folder to `/wp-content/plugins/`
+3. Run `composer install --no-dev` inside the plugin directory
+4. Ensure `vendor/` directory exists with DomPDF dependencies
+5. Activate through WordPress admin **Plugins** page
 
 ## 📖 Usage
 
@@ -244,10 +252,10 @@ ADM002,Jane Smith,jane@example.com,0987654321,1,
 
 Contributions are welcome! Please:
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
+1. Fork the repository: https://github.com/sanjuacodez/certificate-downloader
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
 ## 📄 License
@@ -278,11 +286,19 @@ certificate-downloader/
 
 ### Running Locally
 
-1. Set up local WordPress environment
-2. Clone repository to plugins directory
-3. Run `composer install`
-4. Activate plugin
-5. Enable WordPress debug mode for development:
+1. Set up local WordPress environment (XAMPP, Local, or similar)
+2. Clone repository to plugins directory:
+   ```bash
+   cd wp-content/plugins/
+   git clone https://github.com/sanjuacodez/certificate-downloader.git
+   cd certificate-downloader
+   ```
+3. Install dependencies:
+   ```bash
+   composer install
+   ```
+4. Activate plugin in WordPress admin
+5. Enable WordPress debug mode for development in `wp-config.php`:
    ```php
    define('WP_DEBUG', true);
    define('WP_DEBUG_LOG', true);
@@ -305,9 +321,9 @@ See [PROJECT_STATUS.md](PROJECT_STATUS.md) for detailed feature completion statu
 ## 📞 Support
 
 For issues, questions, or suggestions:
-- Open an issue on GitHub
+- Open an issue: https://github.com/sanjuacodez/certificate-downloader/issues
 - Check existing issues for solutions
-- Review documentation
+- Review documentation files (README.md, DATABASE_SCHEMA.md, API.md, PROJECT_STATUS.md)
 
 ## 🙏 Credits
 
