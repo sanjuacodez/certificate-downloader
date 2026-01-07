@@ -1,0 +1,32 @@
+{
+    "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+    "meta": {
+        "title": "Certificate Downloader Development Environment",
+        "description": "Scaffold for developing a secure certificate management and PDF generation plugin.",
+        "author": "Sanjay Shankar"
+    },
+    "preferredVersions": {
+        "php": "8.1",
+        "wp": "6.4"
+    },
+    "landingPage": "/wp-admin/admin.php?page=certificate-downloader",
+    "steps": [
+        {
+            "step": "login",
+            "username": "admin",
+            "password": "password"
+        },
+        {
+            "step": "installPlugin",
+            "pluginData": {
+                "resource": "wordpress.org/plugins",
+                "slug": "sqlite-database-integration"
+            }
+        }
+    ],
+    "features": {
+        "networking": true
+    },
+    "version": "1.0.0",
+    "mvc_compliant": true
+}
