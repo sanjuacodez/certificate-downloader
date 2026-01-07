@@ -1,0 +1,297 @@
+/* Admin Styles */
+
+.post-count .count {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    color: #0073aa;
+}
+
+.sjs-cert-import-result {
+    margin-top: 20px;
+}
+
+/* Dashboard Styles */
+.sjs-cert-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.sjs-cert-stat-card {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+}
+
+.sjs-cert-stat-card .stat-icon {
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+    color: #0073aa;
+}
+
+.sjs-cert-stat-card .stat-content h3 {
+    margin: 0;
+    font-size: 13px;
+    color: #646970;
+    font-weight: 600;
+}
+
+.sjs-cert-stat-card .stat-content .stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1d2327;
+    line-height: 1.2;
+}
+
+.sjs-cert-dashboard-columns {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.sjs-cert-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+.sjs-cert-column .card {
+    margin-top: 0;
+    padding: 0;
+}
+
+.sjs-cert-column .card h2 {
+    padding: 15px;
+    margin: 0;
+    border-bottom: 1px solid #f0f0f1;
+    font-size: 14px;
+}
+
+.sjs-cert-column .card .widefat {
+    border: none;
+    box-shadow: none;
+}
+
+.sjs-cert-column .card p {
+    padding: 0 15px 15px;
+}
+
+.sjs-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.sjs-badge.success {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.sjs-badge.warning {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.sjs-cert-quick-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sjs-cert-quick-links li {
+    border-bottom: 1px solid #f0f0f1;
+    margin: 0;
+}
+
+.sjs-cert-quick-links li:last-child {
+    border-bottom: none;
+}
+
+.sjs-cert-quick-links a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #1d2327;
+    transition: background 0.2s;
+}
+
+.sjs-cert-quick-links a:hover {
+    background: #f6f7f7;
+    color: #0073aa;
+}
+
+.sjs-cert-quick-links .dashicons {
+    margin-right: 10px;
+    color: #0073aa;
+}
+
+/* Students Page Styles */
+.sjs-cert-accordions-wrapper {
+    margin-bottom: 20px;
+}
+
+.sjs-cert-accordion {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.sjs-cert-accordion summary {
+    padding: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    outline: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.sjs-cert-accordion summary::-webkit-details-marker {
+    display: none;
+}
+
+.sjs-cert-accordion summary .dashicons {
+    margin-right: 10px;
+    color: #0073aa;
+}
+
+.sjs-cert-accordion[open] summary {
+    border-bottom: 1px solid #f0f0f1;
+    background: #fcfcfc;
+}
+
+.sjs-cert-accordion-content {
+    padding: 20px;
+}
+
+/* Form Grid */
+.sjs-cert-form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.sjs-cert-form-grid .form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.sjs-cert-form-grid label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #1d2327;
+}
+
+.sjs-cert-form-grid .required {
+    color: #d63638;
+}
+
+.sjs-cert-form-grid input[type="text"],
+.sjs-cert-form-grid input[type="email"],
+.sjs-cert-form-grid select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+}
+
+.form-actions {
+    text-align: right;
+    border-top: 1px solid #f0f0f1;
+    padding-top: 20px;
+}
+
+/* Import Section */
+.sjs-cert-import-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sjs-cert-import-header p {
+    margin: 0;
+    color: #646970;
+}
+
+.sjs-cert-import-form {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f6f7f7;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px dashed #c3c4c7;
+}
+
+.file-upload-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.file-upload-wrapper input[type=file] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.file-name {
+    margin-left: 10px;
+    font-style: italic;
+    color: #646970;
+}
+
+.sjs-cert-table-card {
+    margin-top: 20px;
+}
+
+.sjs-cert-table-card .search-box {
+    margin: 10px 15px;
+}
+/* Empty State Styles */
+.sjs-cert-empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f9f9f9;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+.sjs-cert-empty-state svg {
+    margin-bottom: 20px;
+    opacity: 0.6;
+}
+
+.sjs-cert-empty-state h3 {
+    font-size: 18px;
+    color: #1d2327;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+.sjs-cert-empty-state p {
+    color: #646970;
+    font-size: 14px;
+    margin: 0;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}

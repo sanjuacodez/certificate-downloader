@@ -1,0 +1,204 @@
+.sjs-cert-settings-accordion details {
+    border-bottom: 1px solid #f0f0f1;
+}
+
+.sjs-cert-settings-accordion summary {
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    outline: none;
+    background: #fafafa;
+}
+
+.sjs-cert-settings-accordion summary:hover {
+    background: #f6f7f7;
+}
+
+.sjs-cert-settings-accordion .accordion-content {
+    padding: 20px;
+    background: #fff;
+}
+
+.form-field {
+    margin-bottom: 15px;
+}
+
+.form-field label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #1d2327;
+}
+
+.signature-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+/* Templates Reel Styles */
+.template-item {
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    padding: 8px;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    flex: 0 0 auto;
+    width: 130px;
+    background: #fff;
+}
+
+.template-item:hover {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.template-item.selected {
+    border-color: #2271b1;
+    background: #f0f6fc;
+    box-shadow: 0 2px 8px rgba(34, 113, 177, 0.15);
+}
+
+.template-preview {
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    margin-bottom: 8px;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ddd;
+}
+
+.template-name {
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+    color: #1d2327;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.template-badge {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background: rgba(34, 113, 177, 0.9);
+    color: #fff;
+    font-size: 8px;
+    padding: 2px 4px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Preview Scoped Styles */
+#sjs-cert-preview-frame .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#sjs-cert-preview-frame .bg-layer {
+    z-index: 1;
+}
+
+#sjs-cert-preview-frame .bg-img {
+    width: 100%;
+    height: 100%;
+}
+
+#sjs-cert-preview-frame .border-layer {
+    z-index: 2;
+    padding: 40px;
+    pointer-events: none;
+}
+
+#sjs-cert-preview-frame .border-box {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#sjs-cert-preview-frame .content-layer {
+    z-index: 3;
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#sjs-cert-preview-frame .layout-table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+#sjs-cert-preview-frame .layout-table td {
+    vertical-align: middle;
+}
+
+#sjs-cert-preview-frame .header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#sjs-cert-preview-frame .logo {
+    max-height: 80px;
+    margin-bottom: 20px;
+}
+
+#sjs-cert-preview-frame h1 {
+    margin: 0 0 20px;
+}
+
+#sjs-cert-preview-frame .content {
+    line-height: 1.6;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#sjs-cert-preview-frame .footer-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#sjs-cert-preview-frame .footer-table td {
+    vertical-align: bottom;
+    text-align: center;
+    padding: 0 10px;
+}
+
+#sjs-cert-preview-frame .sig-line {
+    border-bottom: 1px solid #000;
+    width: 150px;
+    margin: 5px auto;
+}
+
+#sjs-cert-preview-frame .sig-img {
+    max-height: 40px;
+    display: block;
+    margin: 0 auto;
+}
+
+#sjs-cert-preview-frame .footer-logo {
+    max-height: 60px;
+}
+
+/* Center Layout Absolute Override */
+#sjs-cert-preview-frame .center-layout-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+}
